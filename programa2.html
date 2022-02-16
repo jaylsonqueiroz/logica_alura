@@ -1,0 +1,38 @@
+<canvas  width="600" height="400"></canvas>
+ 
+<script>
+
+//*Variables (x,y,color) 
+
+function drawSquare (x,y,color) {
+
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+
+	pincel.fillStyle = color;
+	pincel.fillRect(x,y,50,50)
+	pincel.strokeStyle = 'black'
+	pincel.strokeRect(x,y,50,50)
+}
+
+//*Flexible code clean
+
+var x = 0;
+var y = 0;
+
+
+//*Repetition with while
+
+while (x < 600 && y < 400) {
+
+drawSquare(x,0,'red')
+drawSquare(0,y,'blue')
+
+x = x + 50;
+y = y + 50;
+
+}
+
+
+</script>

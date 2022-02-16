@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<br/>
+<input/>
+<br/>
+<br/>
+<button>Compare my secret</button>
+
+<script>
+var secret = Math.round(Math.random()*10)
+var input = document.querySelector("input")
+
+function verificador () {
+		if (input.value == secret) {
+		alert("CORRETO")
+	}else {
+		alert("INCORRETO")
+	}
+}
+var button = document.querySelector("button")
+button.onclick = verificador
+
+
+</script>

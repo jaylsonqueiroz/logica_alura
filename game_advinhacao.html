@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+	function mostrar (texto) {
+		document.write("<br>")
+		document.write(texto);
+		document.write("<br>")
+	}
+var tentativas = 3
+var numeroTentativas = 1
+
+var numeroAleatorio = Math.round(Math.random() * 10)
+
+while (numeroTentativas <= tentativas) {
+
+	var chute = parseInt(prompt("Ja escolhi o meu numero, voce esta na tentativa " + numeroTentativas + "/" + tentativas +" digite seu palpite: "))
+
+		if (chute == numeroAleatorio) {
+			mostrar("voce acertou &#128512;, eu havia escolhido o numero " + numeroAleatorio + " !!!!");
+			break;
+
+		} else {
+			alert("Voce errou tente novamente")
+		}
+		numeroTentativas ++;
+}
+mostrar("Voce perdeu, esgotou todas as suas tentativas. o numero que escolhi era: " + numeroAleatorio)
+mostrar("FIM")
+</script>

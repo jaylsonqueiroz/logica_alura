@@ -1,0 +1,30 @@
+<canvas width="300" height="200"></canvas>
+
+<body bgcolor="">
+
+<script>
+
+
+var tela = document.querySelector("canvas");
+
+var pincel = tela.getContext('2d');
+
+pincel.fillStyle = 'white';
+pincel.fillRect( 0, 0, 300, 200);
+
+pincel.fillStyle = 'green';
+pincel.fillRect(0,0,100,200)
+
+pincel.fillStyle = 'red';
+pincel.fillRect(200,0,300,300);
+
+pincel.fillStyle = 'yellow';
+pincel.beginPath();
+pincel.moveTo(150,100);
+pincel.lineTo(100.200);
+pincel.lineTo(200.200);
+pincel.fill();
+
+
+</script>
+</body>
